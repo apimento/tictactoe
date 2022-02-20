@@ -1,0 +1,96 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+
+body { 
+    background-color: aliceblue;
+}
+
+h1 { 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color:aliceblue;  
+    grid-row: 1; 
+    grid-column: 3; 
+    margin-left: 130px;
+    /* text-align: center;  */
+}
+
+.xBegins { 
+    grid-row: 2; 
+    grid-column: 3; 
+    margin-left: 170px; 
+    color: aliceblue; 
+    font-size: 25px;
+}
+
+
+.player { 
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    color:aliceblue;   
+    /* font-size: 30px; */
+    grid-row: 2; 
+    grid-column: 3; 
+    margin-left: 225px;
+    /* text-align: center; */
+} 
+
+.container { 
+    width: 600px; 
+    display: grid; 
+    grid-template-columns: 10fr 10fr 4fr 10fr 10fr;  
+    grid-template-rows: 0.5fr 0fr 4fr 1fr 1fr;
+    gap: 5px; 
+    border: 4px solid lightskyblue; 
+    background-image: linear-gradient(lightskyblue , dodgerblue); 
+    color: antiquewhite;
+}
+
+.container > DIV { 
+    width:100%;
+
+}
+
+#table { 
+    height: 380px; 
+    width: 460px; 
+    background-image: linear-gradient(dodgerblue , deepskyblue);  
+    grid-column: 3; 
+    grid-row: 3;
+    
+}
+
+.cell { 
+    height: 120px; 
+    width: 120px;  
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 100px;   
+    text-align: center;
+    color: antiquewhite;
+    border: 2px groove antiquewhite; 
+    border-color: aliceblue;
+    border-radius: 40%; 
+    display: inline-block; 
+    vertical-align:top;  
+    background-image: linear-gradient(deepskyblue , dodgerblue);  
+}
+
+.row { 
+margin-left: 40px; 
+} 
+
+.message { 
+    grid-column: 3; 
+    grid-row: 5; 
+    color:antiquewhite; 
+    margin-left: 220px;
+}
+
+#startOver {
+    background-image: linear-gradient(deepskyblue, dodgerblue); 
+    color: antiquewhite;  
+    font-size: 30px;  
+    border: 4px antiquewhite;
+    grid-row: 4; 
+    grid-column: 3;
+} 
